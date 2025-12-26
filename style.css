@@ -2,7 +2,11 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c2f4a, #3b3f6b, #2c2f4a);
 }
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Srisakdi&family=Satisfy&display=swap');
 
@@ -535,4 +539,5 @@ body.party button{
   z-index:9999;
   background:linear-gradient(135deg,#ff6ec4,#7873f5);
 }
+
 
