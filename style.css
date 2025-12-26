@@ -561,6 +561,45 @@ body.party button{
   z-index:9999;
   background:linear-gradient(135deg,#ff6ec4,#7873f5);
 }
+/* Knife */
+.knife {
+  position: absolute;
+  z-index: 3;
+}
+
+/* Loader / knife box */
+.loader-box {
+  position: absolute;
+  z-index: 2;
+}
+
+/* Cake */
+.cake {
+  position: relative;
+  z-index: 4;
+}
+
+/* Buttons (gallery, message, cut) */
+.action-buttons {
+  position: relative;
+  z-index: 5;
+}
+
+.knife {
+  width: 55%;
+  max-width: 260px;
+}
+
+.loader-box {
+  width: 55%;
+  max-width: 260px;
+}
+
+.action-buttons {
+  margin-top: 30px;
+}
+
+
 
 
 
