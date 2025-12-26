@@ -30,6 +30,12 @@ body {
   box-sizing:border-box;
 }
 
+@media (max-width: 768px) {
+  .bg-banner {
+    background-position: center top;
+  }
+}
+
 /* INITIAL HIDDEN STATE FORCE */
 #plate,
 #cakeSlice{
@@ -555,6 +561,7 @@ body.party button{
   z-index:9999;
   background:linear-gradient(135deg,#ff6ec4,#7873f5);
 }
+
 
 
 
