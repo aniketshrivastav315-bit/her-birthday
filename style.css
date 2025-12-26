@@ -598,33 +598,36 @@ body.party button{
 .action-buttons {
   margin-top: 30px;
 }
+
+/* Gallery grid */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 column */
-  gap: 14px; /* rows + columns ke beech gap */
-  padding: 15px;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 12px; /* space between items */
+  padding: 12px;
 }
+
+/* Gallery images */
 .gallery-grid img {
   width: 100%;
-  height: 160px;
+  height: 150px; /* fixed height per image */
   object-fit: cover;
-  border-radius: 14px;
+  border: 3px solid #ff4fd8; /* neon border */
+  border-radius: 12px;
 
-  border: 2px solid #ff4fd8;
   box-shadow:
     0 0 8px #ff4fd8,
-    0 0 16px rgba(255, 79, 216, 0.6);
+    0 0 15px rgba(255, 79, 216, 0.75);
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform .25s ease, box-shadow .35s ease;
 }
+
+/* Hover / tap glow pop */
 .gallery-grid img:hover {
-  transform: scale(1.04);
+  transform: scale(1.08);
   box-shadow:
-    0 0 12px #ff7be9,
-    0 0 25px rgba(255, 123, 233, 0.9);
-}
-.gallery-grid img {
-  aspect-ratio: 3 / 4;
+    0 0 14px #ff7be9,
+    0 0 30px rgba(255, 123, 233, 0.85);
 }
 
 
