@@ -598,7 +598,31 @@ body.party button{
 .action-buttons {
   margin-top: 30px;
 }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 column */
+  gap: 14px; /* rows + columns ke beech gap */
+  padding: 15px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
 
+  border: 2px solid #ff4fd8;
+  box-shadow:
+    0 0 8px #ff4fd8,
+    0 0 16px rgba(255, 79, 216, 0.6);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.04);
+  box-shadow:
+    0 0 12px #ff7be9,
+    0 0 25px rgba(255, 123, 233, 0.9);
+}
 
 
 
