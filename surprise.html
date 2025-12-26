@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise Cake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="party">
+    
+<button class="back-btn" onclick="goBack()">⬅️ Back</button>
+
+<button class="music-btn" onclick="toggleMusic()">⏸️</button>
+
+<h1 class="glow">🎂 Cake Time 🎂</h1>
+
+
+<div class="cake-area">
+
+  <!-- Cake -->
+  <div class="cake-holder">
+    <img id="cake" src="images/cake.png">
+
+    <button id="loveBtn" onclick="go('love.html')">
+      💌 Surprise Message
+    </button>
+  </div>
+
+  <button id="startCutBtn" onclick="startKnifeDrama()">
+    ✂️ Cut the Cake
+  </button>
+
+  <img id="cakeSlice" src="images/cake-slice.png">
+  <img id="plate" src="images/plate.png">
+
+</div>
+
+<!-- 🔪 KNIFE LOADER -->
+<div class="loader-overlay" id="knifeLoader">
+
+  <div class="knife-box" id="knifeBox">
+
+    <img id="knifeImg" src="images/knife-bad.png">
+
+    <div class="knife-text" id="knifeText">
+      Areee ye to Najafgarh wala chaku aagya... 😬
+    </div>
+
+    <div class="knife-options">
+      <button id="badBtn" onclick="badKnife()">isi se katna hai</button>
+      <button id="changeBtn" onclick="changeKnife()">change kro knife</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="menu">
+  <button onclick="go('gallery.html')">📸 Gallery</button>
+  <button onclick="go('message.html')">💌 Message</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

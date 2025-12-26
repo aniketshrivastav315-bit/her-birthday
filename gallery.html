@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="party">
+
+<button class="back-btn" onclick="goBack()">⬅️ Back</button>
+
+<!-- MUSIC BUTTON -->
+<button class="music-btn" onclick="toggleMusic()">⏸️</button>
+
+<!-- HEADING -->
+<h1 class="glow">📸 Memories</h1>
+
+<!-- GALLERY -->
+<div class="gallery">
+  <img src="images/pic1.jpg" onclick="openLoader()">
+  <img src="images/pic2.jpg" onclick="openLoader()">
+  <img src="images/pic3.jpg" onclick="openLoader()">
+  <img src="images/pic4.jpg" onclick="openLoader()">
+  <img src="images/pic5.jpg" onclick="openLoader()">
+  <img src="images/pic6.jpg" onclick="openLoader()">
+</div>
+
+<div id="load">
+  <div class="loader-box" id="loaderBox">
+
+    <div class="meter-text">💖 Cuteness Meter 💖</div>
+
+    <div id="bar">
+      <div id="fill"></div>
+    </div>
+
+    <div class="status-text" id="percent">Loading… 0%</div>
+    <div class="warning-text" id="warn">Preparing cuteness…</div>
+
+  </div>
+</div>
+
+
+
+<!-- BOTTOM MENU -->
+<div class="menu">
+  <button onclick="go('message.html')">💌 Message for You</button>
+  <button onclick="go('surprise.html')">🎂 Surprise</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
