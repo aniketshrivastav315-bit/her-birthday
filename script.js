@@ -1,3 +1,4 @@
+const safe = (id) => document.getElementById(id) || null;
 let bgm = new Audio("songs/birthday.mp3");
 bgm.loop = true;
 
@@ -5,13 +6,10 @@ bgm.loop = true;
 const savedTime = localStorage.getItem("musicTime");
 if (savedTime) bgm.currentTime = savedTime;
 
-function toggleMusic(){
-  if(bgm.paused){
-    bgm.play().catch(()=>{});
-  } else {
-    bgm.pause();
-  }
-}
+// auto play only after login / navigation
+window.addEventListener("pageshow", () => {
+  bgm.play().catch(()=>{});
+});
 
 // save progress
 setInterval(() => {
@@ -205,4 +203,9 @@ function enableCakeDrag(){
 function goBack(){
   window.history.back();
 }
+
+const knifeText = safe("knifeText");
+const badBtn = safe("badBtn");
+const changeBtn = safe("changeBtn");
+const knifeImg = safe("knifeImg");
 
