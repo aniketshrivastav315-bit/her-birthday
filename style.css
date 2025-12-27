@@ -726,9 +726,11 @@ body.party button{
 }
 
 .subtitle{
+  font-size: 1.15rem;   /* 🔥 pehle se bada */
+  line-height: 1.6;
   text-align: center;
-  margin: 14px 0 22px;
-  font-size: 18px;
+  padding: 0 16px;
+  margin: 10px 0 18px 0;
   color: #ffd6ff;
   font-family: 'cursive';
   text-shadow: 0 0 8px rgba(255,180,255,.6);
@@ -750,6 +752,7 @@ h1, h2, p{
 .party{
   height: calc(var(--vh, 1vh) * 100);
 }
+
 
 
 
