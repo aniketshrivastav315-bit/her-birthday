@@ -277,22 +277,27 @@ button:hover{
 }
 
 #loveBtn{
-  position:absolute;
-  inset:0;
-  margin:auto;
-  opacity:0;
-  transform:scale(.7);
-  display:none;
-  transition:
-    opacity .6s ease,
-    transform .6s cubic-bezier(.2,1.5,.4,1);
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  width: auto;          /* 👈 IMPORTANT */
+  min-width: 180px;
+  max-width: 220px;
+  margin: 12px auto;
+  display: none;        /* JS se show hota hai */
+  text-align: center;
+  background: linear-gradient(135deg,#ff7ad9,#a855f7);
+  box-shadow: 0 0 18px rgba(255,105,180,.6);
 }
 
 #loveBtn.show{
-  opacity:1;
-  transform:scale(1);
+  animation: pop .4s ease;
 }
 
+@keyframes pop{
+  0%{transform:scale(.6);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
 
 #cake{
   width:260px;
@@ -712,6 +717,7 @@ body.party button{
 .music-btn:hover {
   background: rgba(255, 255, 255, 0.25);
 }
+
 
 
 
