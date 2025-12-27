@@ -561,17 +561,6 @@ body.party button{
   z-index:9999;
   background:linear-gradient(135deg,#ff6ec4,#7873f5);
 }
-/* Knife */
-.knife {
-  position: absolute;
-  z-index: 2;
-}
-
-/* Loader / knife box */
-.loader-box {
-  position: absolute;
-  z-index: 2;
-}
 
 /* Cake */
 .cake {
@@ -583,16 +572,6 @@ body.party button{
 .menu {
   position: relative;
   z-index: 5;
-}
-
-.knife {
-  width: 55%;
-  max-width: 260px;
-}
-
-.loader-box {
-  width: 55%;
-  max-width: 260px;
 }
 
 .menu{
@@ -626,11 +605,31 @@ body.party button{
     margin-top: 230px;
   }
 }
+.loader-box {
+  position: relative;
+  width: 90%;
+  max-width: 320px;
+  min-height: 260px;   /* 🔥 IMPORTANT */
+  margin: 180px auto 0 auto; /* knife ke niche space */
+  padding: 25px 15px;
+  border-radius: 25px;
+  z-index: 3;
+}
 
+.knife {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  max-width: 260px;
+  z-index: 2;
+  pointer-events: none;
+}
 
-
-
-
+.loader-box button {
+  margin-top: 14px;
+}
 
 
 
