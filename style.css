@@ -658,6 +658,26 @@ body.party button{
   }
 }
 
+/* FORCE buttons out of all flex layouts */
+.back-btn,
+.music-btn {
+  position: fixed !important;
+  top: 12px !important;
+  z-index: 9999;
+}
+
+/* Back = left */
+.back-btn {
+  left: 12px !important;
+  right: auto !important;
+}
+
+/* Music = right */
+.music-btn {
+  right: 12px !important;
+  left: auto !important;
+}
+
 
 
 
