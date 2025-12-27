@@ -1,3 +1,11 @@
+function fixVH(){
+  document.documentElement.style.setProperty(
+    '--vh',
+    window.innerHeight * 0.01 + 'px'
+  );
+}
+fixVH();
+window.addEventListener('resize', fixVH);
 const safe = (id) => document.getElementById(id) || null;
 let bgm = new Audio("songs/birthday.mp3");
 bgm.loop = true;
@@ -226,5 +234,6 @@ bgm.addEventListener("pause", ()=>{
 bgm.addEventListener("play", ()=>{
   if(musicBtn) musicBtn.innerText = "⏸️";
 });
+
 
 
