@@ -18,11 +18,6 @@ setInterval(() => {
   }
 }, 500);
 
-function toggleMusic(){
-  if(bgm.paused) bgm.play();
-  else bgm.pause();
-}
-
 /* ---------- LOGIN ---------- */
 function login(){
   if (user.value === "Cutie" && pass.value === "guukhalo") {
@@ -208,4 +203,28 @@ const knifeText = safe("knifeText");
 const badBtn = safe("badBtn");
 const changeBtn = safe("changeBtn");
 const knifeImg = safe("knifeImg");
+const musicBtn = document.querySelector(".music-btn");
+function toggleMusic(){
+  if(bgm.paused){
+    bgm.play().catch(()=>{});
+    if(musicBtn) musicBtn.innerText = "⏸️";
+  } else {
+    bgm.pause();
+    if(musicBtn) musicBtn.innerText = "▶️";
+  }
+}
+window.addEventListener("pageshow", () => {
+  bgm.play().then(()=>{
+    if(musicBtn) musicBtn.innerText = "⏸️";
+  }).catch(()=>{});
+});
+
+bgm.addEventListener("pause", ()=>{
+  if(musicBtn) musicBtn.innerText = "▶️";
+});
+
+bgm.addEventListener("play", ()=>{
+  if(musicBtn) musicBtn.innerText = "⏸️";
+});
+
 
