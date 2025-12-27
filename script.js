@@ -5,9 +5,13 @@ bgm.loop = true;
 const savedTime = localStorage.getItem("musicTime");
 if (savedTime) bgm.currentTime = savedTime;
 
-document.addEventListener("DOMContentLoaded", () => {
-  bgm.play().catch(()=>{});
-});
+function toggleMusic(){
+  if(bgm.paused){
+    bgm.play().catch(()=>{});
+  } else {
+    bgm.pause();
+  }
+}
 
 // save progress
 setInterval(() => {
@@ -75,11 +79,14 @@ function openPhoto(src){
 }
 
 /* ---------- SURPRISE : KNIFE DRAMA ---------- */
-let knifeStage = 0;
-
 function startKnifeDrama(){
+  knifeStage = 0; // 🔥 RESET
+  badBtn.style.display = "inline-block";
+  changeBtn.innerText = "change kro knife";
+  knifeImg.src = "images/knife-bad.png";
+
   const loader = document.getElementById("knifeLoader");
-  loader.classList.add("active");   // 👈 NOT display:flex
+  loader.classList.add("active");
 }
 
 function badKnife(){
@@ -198,3 +205,4 @@ function enableCakeDrag(){
 function goBack(){
   window.history.back();
 }
+
