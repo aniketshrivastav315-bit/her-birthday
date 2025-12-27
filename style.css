@@ -564,7 +564,7 @@ body.party button{
 /* Knife */
 .knife {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
 }
 
 /* Loader / knife box */
@@ -580,7 +580,7 @@ body.party button{
 }
 
 /* Buttons (gallery, message, cut) */
-.action-buttons {
+.menu {
   position: relative;
   z-index: 5;
 }
@@ -595,8 +595,8 @@ body.party button{
   max-width: 260px;
 }
 
-.action-buttons {
-  margin-top: 30px;
+.menu{
+  margin-top: 260px;
 }
 
 .gallery-grid {
@@ -617,6 +617,16 @@ body.party button{
     0 0 8px #ff4fd8,
     0 0 16px rgba(255, 79, 216, 0.7);
 }
+@media (max-width: 480px) {
+  .knife {
+    width: 60%;
+  }
+
+  .menu {
+    margin-top: 230px;
+  }
+}
+
 
 
 
