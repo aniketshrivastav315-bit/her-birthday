@@ -677,6 +677,42 @@ body.party button{
   right: 12px !important;
   left: auto !important;
 }
+/* 🔙 Back Button – transparent */
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 🎵 Music Button – transparent & thin */
+.music-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 6px 8px;     /* 👈 breadth kam */
+  border-radius: 50%;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 14px;
+  width: 34px;         /* 👈 force thin */
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-btn:active,
+.music-btn:active {
+  transform: scale(0.92);
+}
+
+.back-btn:hover,
+.music-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
 
 
 
