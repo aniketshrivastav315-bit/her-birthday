@@ -746,6 +746,10 @@ h1, h2, p{
 .menu{
   margin-bottom: 12px;   /* zyada ho to scroll aata */
 }
+.party{
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 
 
 
