@@ -3,7 +3,6 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;   /* 🚫 NO SCROLL */
 }
 
 /* Gradient background */
@@ -752,6 +751,7 @@ h1, h2, p{
 .party{
   height: calc(var(--vh, 1vh) * 100);
 }
+
 
 
 
