@@ -3,6 +3,12 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+.home-page {
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Gradient background */
@@ -750,6 +756,16 @@ h1, h2, p{
 }
 .party{
   height: calc(var(--vh, 1vh) * 100);
+}
+
+.scroll-page {
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+.scroll-page {
+  -webkit-overflow-scrolling: touch;
 }
 
 
